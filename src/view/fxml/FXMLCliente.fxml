@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="554.0" styleClass="fonto" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLClienteController">
+   <children>
+      <TableView fx:id="tblcliente" layoutY="240.0" prefHeight="209.0" prefWidth="553.0">
+        <columns>
+          <TableColumn fx:id="clmdni" prefWidth="93.0" text="DNI" />
+          <TableColumn fx:id="clmnombre" prefWidth="202.0" text="NOMBRE" />
+            <TableColumn fx:id="clmapellido" prefWidth="304.0" text="APELLIDO" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="textdni" labelFloat="true" layoutX="50.0" layoutY="35.0" promptText="DNI" styleClass="cajaTexto" />
+      <JFXTextField fx:id="textnombre" labelFloat="true" layoutX="50.0" layoutY="89.0" maxWidth="200.0" minWidth="200.0" prefHeight="31.0" prefWidth="200.0" promptText="NOMBRE" styleClass="cajaTexto" />
+      <JFXTextField fx:id="textapellido" labelFloat="true" layoutX="50.0" layoutY="150.0" maxWidth="200.0" minWidth="200.0" prefHeight="31.0" prefWidth="200.0" promptText="APELLIDO" styleClass="cajaTexto" />
+      <JFXButton fx:id="btnguardar" layoutX="319.0" layoutY="31.0" onAction="#guardar" styleClass="boton" text="GUARDAR" textFill="#282727">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/save.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnnuevo" layoutX="319.0" layoutY="101.0" onAction="#nuevo" prefHeight="39.0" prefWidth="106.0" styleClass="boton" text="NUEVO">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/new.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXTextField fx:id="textbuscar" labelFloat="true" layoutX="319.0" layoutY="193.0" maxWidth="200.0" minWidth="200.0" prefHeight="31.0" prefWidth="200.0" promptText="BUSCAR" styleClass="cajaTexto" />
+   </children>
+</AnchorPane>

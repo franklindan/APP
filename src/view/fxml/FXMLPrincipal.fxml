@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="832.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLPrincipalController">
+   <children>
+      <JFXToolbar layoutY="-1.0" prefHeight="39.0" prefWidth="832.0" styleClass="menu" stylesheets="@../css/style.css">
+         <left>
+            <JFXHamburger fx:id="btnmenu" prefHeight="31.0" prefWidth="31.0" BorderPane.alignment="CENTER" />
+         </left>
+         <center>
+            <Label text="SISTEMA DE PASAJE  V 1.0" textFill="#f8f7f7" BorderPane.alignment="CENTER" />
+         </center>
+      </JFXToolbar>
+      <BorderPane layoutX="-4.0" layoutY="38.0" prefHeight="356.0" prefWidth="600.0">
+         <left>
+            <JFXDrawer fx:id="menu" defaultDrawerSize="200.0" prefHeight="356.0" prefWidth="164.0" BorderPane.alignment="CENTER" />
+         </left>
+         <center>
+            <AnchorPane fx:id="ventana" prefHeight="356.0" prefWidth="441.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

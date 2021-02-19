@@ -1,0 +1,24 @@
+
+.cajaTexto{
+    -fx-background-radius: 12px;
+    -fx-background-color: #FFFFFF;
+}
+.boton, .botonmenu{
+    -fx-background-radius: 12px;
+    -fx-background-color: #9D00FF;
+    -fx-text-fill: #FFFFFF;
+}
+.boton:hover, .botonmenu:hover{
+    -fx-background-color:#009901;
+    
+}
+.fonto{
+    -fx-background-color: #cccccc;
+}
+
+.menu{
+        -fx-background-color:#3263FE;
+}
+.botonmenu{
+     -fx-background-radius: 0px;
+}

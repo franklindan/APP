@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="180.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLMenuController">
+   <children>
+      <Pane prefHeight="121.0" prefWidth="200.0">
+         <children>
+            <Circle fx:id="avatar" fill="DODGERBLUE" layoutX="84.0" layoutY="38.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="56.0" layoutY="62.0" text="BIENVENIDO" />
+            <Label fx:id="lblusuario" alignment="CENTER" contentDisplay="CENTER" layoutX="45.0" layoutY="87.0" prefHeight="17.0" prefWidth="77.0" text="USUARIO" textAlignment="CENTER" />
+         </children>
+      </Pane>
+      <Accordion>
+        <panes>
+          <TitledPane animated="false" prefHeight="201.0" prefWidth="180.0" text="MANTENIMIENTO">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="btncliente" accessibleText="cliente" layoutX="-1.0" prefHeight="40.0" prefWidth="180.0" styleClass="botonmenu" text="CLIENTE">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true" styleClass="botonmenu">
+                                 <image>
+                                    <Image url="@../img/cliente.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></JFXButton>
+                        <JFXButton fx:id="btnsalida" accessibleText="salida" layoutX="-1.0" layoutY="40.0" prefHeight="39.0" prefWidth="180.0" styleClass="botonmenu" text="SALIDA">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/pasaje.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></JFXButton>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane accessibleText="pasaje" animated="false" prefHeight="100.0" text="GENERAR">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="btnpasaje" accessibleText="pasaje" layoutX="-1.0" prefHeight="42.0" prefWidth="180.0" styleClass="botonmenu" text="PASAJE">
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/pasaj.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></JFXButton>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" prefHeight="214.0" prefWidth="180.0" text="PERFIL">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="btnperfil" accessibleText="cuenta" layoutX="-1.0" layoutY="-2.0" prefHeight="48.0" prefWidth="180.0" styleClass="botonmenu" text="CUENTA" />
+                        <JFXButton fx:id="btnlogout" accessibleText="salir" layoutX="-1.0" layoutY="46.0" onAction="#salir" prefHeight="48.0" prefWidth="180.0" styleClass="botonmenu" text="CERRAR SESION">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/logout.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <ImageView fitHeight="38.0" fitWidth="35.0" layoutX="28.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/perfil.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+   </children>
+</VBox>
